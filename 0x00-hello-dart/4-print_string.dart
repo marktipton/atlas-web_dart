@@ -1,5 +1,5 @@
 void main() {
   String str = "Holberton School";
-  String substring = str.substring(0, str.length - 7);
+  var substring = str.split(' ')[0];
   print('$str$str$str\n$substring\n');
 }
