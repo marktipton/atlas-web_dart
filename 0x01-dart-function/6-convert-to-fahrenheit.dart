@@ -1,4 +1,7 @@
 List<double> convertToF(List<double> temperaturesInC) {
-// temperaturesInC.map((temp) => ((temp * 1.8) + 32));
-  return temperaturesInC.map((temp) => ((temp * 1.8) + 32)).toList();
+  List<double> tempsInF = temperaturesInC.map((temp) {
+    double tempInF = ((temp * 1.8) + 32);
+    return double.parse(tempInF.toStringAsFixed(2));
+  }).toList();
+  return tempsInF;
 }
