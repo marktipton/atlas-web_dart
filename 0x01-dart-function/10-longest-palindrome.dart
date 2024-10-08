@@ -1,6 +1,6 @@
 String longestPalindrome(String s) {
   int n = s.length;
-  if (n == 0) return "";
+  if (n == 0) return "none";
 
   int start = 0;
   int maxLen = 1;
