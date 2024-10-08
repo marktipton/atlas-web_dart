@@ -1,6 +1,6 @@
 String longestPalindrome(String s) {
   int n = s.length;
-  if (n == 0) return "none";
+  if (n == 0) return "";
 
   int start = 0;
   int maxLen = 1;
@@ -34,6 +34,9 @@ String longestPalindrome(String s) {
       high++;
     }
   }
-
-  return s.substring(start, start + maxLen);
+  if (s.substring(start, start + maxLen).length > 2) {
+    return s.substring(start, start + maxLen);
+  } else {
+    return "none";
+  }
 }
