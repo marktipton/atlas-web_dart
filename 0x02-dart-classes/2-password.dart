@@ -9,4 +9,9 @@ class Password {
     }
     return false;
   }
+
+  @override
+  String toString() {
+    return 'Your Password is: $password';
+  }
 }
