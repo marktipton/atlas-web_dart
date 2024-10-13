@@ -28,7 +28,7 @@ class User {
       name: userJson['name'],
       age: userJson['age'],
       height: userJson['height'],
-      user_password: userJson['password'] ?? '',
+      user_password: userJson['user_password'] ?? '',
     );
   }
 
